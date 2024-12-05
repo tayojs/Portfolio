@@ -1490,6 +1490,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-list { margin-left: 65px; }
 
+.timeline-list, 
+.timeline-list .timeline-item {
+  color: var(--white-2); 
+}
+
+
   .timeline-item:not(:last-child)::before { left: -40px; }
 
   .timeline-item::after {
@@ -1877,6 +1883,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
+  .timeline-text { 
+    max-width: 700px;
+   }
 
 }
