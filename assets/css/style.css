@@ -1740,6 +1740,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-item { min-width: calc(50% - 15px); }
 
+  .testimonial-relationship {
+    font-size: var(--fs-7); 
+    color: var(--light-gray);
+    margin-left: 94px;
+  }
+  
+
   /* clients */
 
   .clients-item { min-width: calc(25% - 38px); }
