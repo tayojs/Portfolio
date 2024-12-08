@@ -976,6 +976,43 @@ main {
 
 .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
+/* Buttons inside the project hover area */
+.project-hover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 2;
+}
+
+.project-btn {
+  background-color: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: var(--vegas-gold);
+}
+
+/* Show buttons on hover */
+.project-img:hover .project-hover-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 .project-item-icon-box {
   --scale: 0.8;
 
@@ -1609,6 +1646,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-select-box { display: none; }
 
+  .filter-list, .filter-select-box {
+    display: none !important;
+}
+
+
   .filter-list {
     display: flex;
     justify-content: flex-start;
@@ -1740,12 +1782,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-item { min-width: calc(50% - 15px); }
 
-  .testimonial-relationship {
-    font-size: var(--fs-7); 
-    color: var(--light-gray);
-    margin-left: 94px;
-  }
-  
 
   /* clients */
 
